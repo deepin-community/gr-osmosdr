@@ -1,0 +1,6 @@
+0001-apps-fft-add-timezone-to-recording-filename.patch
+0002-hackrf-add-support-for-antenna-switching-with-the-Op.patch
+0003-hackrf-build-without-Opera-Cake-support-if-using-old.patch
+restore-iqbal-support
+restore-pkg-config-support
+1000-appstream-metainfo.patch

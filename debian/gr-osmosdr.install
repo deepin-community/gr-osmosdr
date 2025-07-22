@@ -1,0 +1,8 @@
+usr/bin/*
+usr/include/*
+usr/lib/*/cmake/*
+usr/lib/*/lib*.so
+usr/lib/*/pkgconfig/*
+usr/lib/python*
+usr/share/gnuradio
+org.osmocom.projects.gr_osmosdr.metainfo.xml usr/share/metainfo

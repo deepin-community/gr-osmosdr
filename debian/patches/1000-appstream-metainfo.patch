@@ -1,0 +1,57 @@
+Description: Added AppStream metainfo XML with hardware provide info.
+ This allow isenkram to propose this package when the relevant hardware is
+ present.
+Author: Petter Reinholdtsen
+Forwarded: no
+Last-Update: 2024-08-20
+---
+Index: gr-osmosdr-0.2.6/org.osmocom.projects.gr_osmosdr.metainfo.xml
+===================================================================
+--- /dev/null  1970-01-01 00:00:00.000000000 +0000
++++ gr-osmosdr-0.2.6/org.osmocom.projects.gr_osmosdr.metainfo.xml      2024-08-20 09:28:10.151889259 +0200
+@@ -0,0 +1,45 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<component>
++  <id>org.osmocom.projects.gr_osmosdr</id>
++  <metadata_license>MIT</metadata_license>
++  <name>gr-osmosdr</name>
++  <summary>Gnuradio blocks from the OsmoSDR project</summary>
++  <description>
++    <p>The Osmocom project is a family of projects regarding Open
++    source mobile communications.</p>
++
++    <p>While primarily being developed for the OsmoSDR hardware, this
++    block as well supports:</p>
++
++    <ul>
++      <li>FUNcube Dongle through gr-funcube</li>
++      <li>FUNcube Dongle Pro+ through gr-funcube</li>
++      <li>RTL2832U based DVB-T dongles through librtlsdr</li>
++      <li>RTL-TCP spectrum server (see librtlsdr project)</li>
++      <li>gnuradio .cfile input through libgnuradio-blocks</li>
++      <li>RFSPACE SDR-IQ, SDR-IP, NetSDR (incl. X2 option)</li>
++      <li>Great Scott Gadgets HackRF through libhackrf</li>
++      <li>Nuand LLC bladeRF through libbladeRF library</li>
++      <li>Ettus USRP Devices through Ettus UHD library</li>
++      <li>Fairwaves UmTRX through Fairwaves' fork of UHD</li>
++      <li>AIRSPY Receiver</li>
++      <li>AIRSPY HF+ Receiver</li>
++      <li>SoapySDR support</li>
++      <li>Red Pitaya SDR transceiver</li>
++      <li>FreeSRP through libfreesrp</li>
++    </ul>
++    <p>Example applications include osmocom_fft, osmocom_siggen, and
++    osmocom_spectrum_sense.</p>
++
++    <p>By using the OsmoSDR block you can take advantage of a common
++    software API in your application(s) independent of the underlying
++    radio hardware. This package provides C++ header files,
++    documentation, and Python3 wrappers to the library.</p>
++  </description>
++  <url type="homepage">https://osmocom.org/projects/gr-osmosdr/wiki</url>
++  <provides>
++    <modalias>usb:v1D50p604Bd*</modalias>
++    <modalias>usb:v1D50p6089d*</modalias>
++    <modalias>usb:v1FC9p000Cd*</modalias>
++  </provides>
++</component>
