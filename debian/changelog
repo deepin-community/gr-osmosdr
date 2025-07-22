@@ -1,3 +1,9 @@
+gr-osmosdr (0.2.6-4deepin1) unstable; urgency=medium
+
+  * revert t64
+
+ -- Chang Yang <yangchang@deepin.org>  Tue, 22 Jul 2025 10:58:55 +0800
+
 gr-osmosdr (0.2.6-4) unstable; urgency=medium
 
   * Add Breaks/Replaces for gr-osmosdr-doc (Closes: #1100969)
